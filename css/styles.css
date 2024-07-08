@@ -311,6 +311,8 @@ border-radius: 4px;
 overflow: hidden;
 border: 1px solid #e7e9fc;;
 margin: 0 24px;
+column-gap: 24 px;
+width: calc((100% - 48px) / 3);
 }
 
 .ourportfolio-list-item-title{
@@ -323,6 +325,13 @@ margin-top: 32px;
 margin-bottom: 8px;
 text-align: left;
 padding-left: 16px;
+
+}
+
+.ourportfolio-container{
+    padding: 32px 16px ;
+     border: 1px solid #e7e9fc;
+     border-top: none;
 }
 
 .ourportfolio-list-item-text{
