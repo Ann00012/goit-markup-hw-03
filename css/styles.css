@@ -6,16 +6,57 @@ background-color: #fff;
 
 ul,ol {
     list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin:0;
 }
 
 a{
     text-decoration: none;
 }
 
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .page-header{
     background-color:#FFFFFF;
-;
+border-bottom: 1px solid #e7e9fc;
+
 }
+
+.header-container {
+display:flex;
+align-items: center;
+}
+
+.header-nav{
+    display:flex;
+    align-items: center;
+}
+
+.nav-list{
+display:flex;
+align-items: center;
+padding-left:76px;
+ gap:40px;
+}
+
+.address-list{
+display:flex;
+align-items: center;
+}
+
+.header-logo{
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
 .logo {  
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
@@ -51,8 +92,14 @@ text-decoration: none;
     color:#404bbf;
 }
 
+.nav-item{
+padding:24 px 0;
+display:block;
+}
+
 .address{
     font-style: normal;
+    margin-left: auto;
 }
 .address-link{
 font-size: 16px;
@@ -60,6 +107,11 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 text-decoration: none;
+}
+.address-list{
+    display:flex;
+     padding:24px 0;
+     gap: 40px;
 }
 
 .address-link:hover,
@@ -70,6 +122,7 @@ text-decoration: none;
 
 .hero{
     background: #2E2F42;
+    padding: 188px 0 292px;
 }
 
 .hero-title{
@@ -80,6 +133,10 @@ letter-spacing: 0.02em;
 color:#FFFFFF;
 line-height: 1.07;
 text-align: center;
+padding-top:188px;
+padding-bottom: 48px;
+max-width: 496px;
+margin: 0 auto;
 }
 
 .hero-btn{
@@ -89,7 +146,14 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
 background: #4d5ae5;
-cursor: pointer;
+border-radius: 4px;
+padding: 16px 32px;
+margin: 0 auto;
+display:block;
+min-width:169px;
+height:56px;
+border: none;
+
 }
 
 .hero-btn:hover,
@@ -103,6 +167,12 @@ background-color: #FFFFFF;
 
 .benefits-list{
     background-color: #FFFFFF;
+    display:flex;
+    gap:24px;
+    margin-left: 156px;
+    margin-right: 156px;
+    margin-top: 150px;
+    margin-bottom: 120px;
 }
 
 .benefits-list-item-title{
@@ -111,6 +181,8 @@ font-weight: 500;
 line-height: 24px;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
+
 }
 
 .benefits-list-item-text{
@@ -123,10 +195,12 @@ color: #434455;
 
 .benefits-list-item{
     list-style-type: none;
+    width: calc((100%-72px)/4);
 }
 
 .ourteam{
     background: #F4F4FD;
+    padding:120px 0;
 }
 .ourteam-title{
 font-size: 36px;
@@ -137,6 +211,7 @@ line-height: 1.11;
 text-transform: capitalize;
 color: #2e2f42;
 text-align: center;
+margin-bottom: 72px;
 }
 
 .ourteam-list-item-title{
@@ -145,6 +220,9 @@ font-weight: 500;
 line-height: 24px;
 letter-spacing: 0.02em;
 color: #2e2f42 ;
+text-align: center;
+padding-top: 32px;
+padding-bottom: 8px;
 }
 
 .ourteam-list-item-text{  
@@ -152,16 +230,31 @@ font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.02em;
 color: #434455 ;
+text-align: center;
 }
 
 .ourteam-list-item{
     list-style-type: none;
     background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+padding: 0px 0px 32px 0px;
+width:calc((100%-72px)/4);
+margin: 0 24px;
+}
+
+.ourteam-list{
+    display:flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap:24 px;
 }
 
 
 .ourportfolio{
  background-color: #FFFFFF;
+ padding-top:120px ;
+ padding-bottom: 120px;
 }
 
 .ourportfolio-title{
@@ -173,10 +266,25 @@ line-height: 1.11;
 text-transform: capitalize;
 color:#2e2f42;
 text-align: center;
+padding: 120px 0 72px 0;
+margin-bottom: 72px;
+}
+
+.ourportfolio-list{
+display:flex;
+flex-wrap:wrap;
+column-gap: 24 px;
+row-gap:48px;
+justify-content: center;
 }
 
 .ourportfolio-list-item{
     list-style-type: none;
+padding: 0 ;
+border-radius: 4px;
+overflow: hidden;
+border: 1px solid #e7e9fc;;
+margin: 0 24px;
 }
 
 .ourportfolio-list-item-title{
@@ -185,6 +293,10 @@ font-weight: 500;
 line-height: 24px;
 letter-spacing: 0.02em;
 color: #2e2f42 ;
+margin-top: 32px;
+margin-bottom: 8px;
+text-align: left;
+padding-left: 16px;
 }
 
 .ourportfolio-list-item-text{
@@ -193,19 +305,32 @@ font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.02em;
 color: #434455 ;
+text-align: left;
+padding-bottom: 32px;
+padding-left: 16px;
 }
 
 .footer{
     background: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-accent{
 color: #f4f4fd;
 }
 
+.footer-logo {
+    padding: 24px 0;
+    padding-left: 156px;
+    margin-bottom: 17.5px;
+    text-align: left;
+}
 .footer-text{
 font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.02em;
 color:#F4F4FD;
+padding-left: 156px;
+width: 264px;
 }
