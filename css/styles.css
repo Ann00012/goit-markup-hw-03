@@ -157,7 +157,7 @@ display:block;
 min-width:169px;
 height:56px;
 border: none;
-
+cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -167,6 +167,20 @@ background: #404bbf;
 
 .benefits{
 background-color: #FFFFFF;
+padding: 120px 0;
+}
+
+.visually-hidden{
+    position: absolute;
+    width:1px;
+    height:1px;
+    margin:-1px;
+    border:0;
+    padding:0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip:rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .benefits-list{
@@ -334,8 +348,9 @@ color: #f4f4fd;
 .footer-logo {
     padding: 24px 0;
     padding-left: 156px;
-    margin-bottom: 17.5px;
+    margin-bottom: 16px;
     text-align: left;
+    display: inline-block;
 }
 .footer-text{
 font-size: 16px;
