@@ -45,7 +45,9 @@ display:flex;
 align-items: center;
 padding-left:76px;
  gap:40px;
+ padding: 24px 0;
 }
+
 
 .address-list{
 display:flex;
@@ -250,6 +252,9 @@ margin: 0 24px;
     gap:24 px;
 }
 
+.ourteam-list-item-img{
+    display:block;
+}
 
 .ourportfolio{
  background-color: #FFFFFF;
@@ -308,6 +313,10 @@ color: #434455 ;
 text-align: left;
 padding-bottom: 32px;
 padding-left: 16px;
+}
+
+.ourportfolio-list-item-img{
+    display:block;
 }
 
 .footer{
