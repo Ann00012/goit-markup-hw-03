@@ -258,7 +258,7 @@ text-align: center;
 padding: 0px 0px 32px 0px;
 width:calc((100%-72px)/4);
 margin: 0 24px;
-gap: 24px; 
+
 }
 
 .ourteam-list{
@@ -266,7 +266,7 @@ gap: 24px;
     align-items: flex-end;
     flex-wrap: nowrap;
     justify-content: center;
-    gap:24 px;
+    gap:24px;
 }
 
 .ourteam-list-item-img{
@@ -299,7 +299,7 @@ margin-bottom: 72px;
 .ourportfolio-list{
 display:flex;
 flex-wrap:wrap;
-column-gap: 24 px;
+column-gap: 24px;
 row-gap:48px;
 justify-content: center;
 }
