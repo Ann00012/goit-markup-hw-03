@@ -45,9 +45,11 @@ display:flex;
 align-items: center;
 padding-left:76px;
  gap:40px;
- padding: 24px 0;
 }
 
+.nav-link{
+    padding: 24px 0;
+}
 
 .address-list{
 display:flex;
